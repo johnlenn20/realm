@@ -31,13 +31,14 @@ function displayResults(results) {
 }
 
 // Event listener for input
+const Worlds = window.location.hostname.replace('void','portal').replace('first','portal').replace('last','portal');
 document.getElementById('searchInput').addEventListener('input', async function() {
 	const query = this.value.trim();
 	if (query.length === 0) {
 		displayResults([]);
 		return;
 	}
-	const data = await fetchData('https://' + window.location.hostname.replace(/\b(void|first|last)\b/g, 'portal') + '/list.json');
+	const data = await fetchData('https://' + Worlds + '/list.json');
 	if (data && data.filmTitles) {
 		const results = searchFilms(query, data.filmTitles);
 		displayResults(results);
