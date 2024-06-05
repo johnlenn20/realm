@@ -37,7 +37,7 @@ document.getElementById('searchInput').addEventListener('input', async function(
 		displayResults([]);
 		return;
 	}
-	const data = await fetchData('https://' + window.location.hostname.replace('void', 'portal') + '/list.json');
+	const data = await fetchData('https://' + window.location.hostname.replace(/\b(void|first|last)\b/g, 'portal') + '/list.json');
 	if (data && data.filmTitles) {
 		const results = searchFilms(query, data.filmTitles);
 		displayResults(results);
