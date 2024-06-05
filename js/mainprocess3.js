@@ -11,7 +11,7 @@ document.addEventListener('contextmenu', function(event) {
 	event.preventDefault();
 	window.location.href = 'https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com';
 });
-const apiUrl = `https://${window.location.hostname.replace('void','portal')}/data/${IdCode}.json`,
+const apiUrl = `https://${window.location.hostname.replace(/\b(void|first|last)\b/g,'portal')}/data/${IdCode}.json`,
 	resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
 	if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	let filmTitles = [];
 
 	// Fetch data and initialize pagination
-	fetch('https://'+ window.location.hostname.replace('void', 'portal') +'/list.json')
+	fetch('https://'+ window.location.hostname.replace(/\b(void|first|last)\b/g,'portal') +'/list.json')
 		.then(response => {
 			if (!response.ok) {
 				throw new Error('Network response was not ok');
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		for (let i = 0; i < titlesOnPage.length; i++) {
 			const titleElement = titlesOnPage[i];
 			var posts = ``;
-			const dataJudul = `https://${window.location.hostname.replace('void','portal')}/data/${titleElement.toUpperCase()}.json`;
+			const dataJudul = `https://${window.location.hostname.replace(/\b(void|first|last)\b/g,'portal')}/data/${titleElement.toUpperCase()}.json`;
 			const dJforScrp = titleElement.replaceAll('-', '');
 			procPage(titlesOnPage, i, posts, dataJudul, dJforScrp, bImgA, bImgB);
 		}
