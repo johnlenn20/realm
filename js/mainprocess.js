@@ -5,7 +5,7 @@ const DtcPrm = window.location.href.includes('premium'),
 	bImgA = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/',
 	bImgB = '/w397-h240-c-rw/Thumbnail.webp';
 
-//function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 2000);
+function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 2000);
 document.addEventListener('keydown', e => e.ctrlKey && e.key === 'u' && e.preventDefault());
 const apiUrl = `https://${window.location.hostname.replace('void','portal')}/data/${IdCode}.json`,
 	resultContainer = document.getElementById("result-container");
@@ -41,7 +41,7 @@ fetch(apiUrl).then((t => {
 
 
 })).catch((t => {
-	//window.location=window.location.protocol+'//'+window.location.hostname+'/home';
+	alert('Tidak Tersedia');
 }));
 
 
