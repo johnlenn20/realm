@@ -7,6 +7,10 @@ const DtcPrm = window.location.href.includes('premium'),
 
 function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 2000);
 document.addEventListener('keydown', e => e.ctrlKey && e.key === 'u' && e.preventDefault());
+document.addEventListener('contextmenu', function(event) {
+	event.preventDefault();
+	window.location.href = 'https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com';
+});
 const apiUrl = `https://${window.location.hostname.replace('void','portal')}/data/${IdCode}.json`,
 	resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
