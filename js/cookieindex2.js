@@ -89,7 +89,7 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      iframeElement.src = `https://ad.a-ads.com/2275676?size=300x250`;
+      iframeElement.src = `https://www.youtube.com/embed/y1f0bNcpq6c?si=vtQQs5KwY9Cz2BHw`;
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
