@@ -89,7 +89,7 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      iframeElement.src = `https://www.youtube.com/embed/y1f0bNcpq6c?si=vtQQs5KwY9Cz2BHw`;
+      iframeElement.src = `https://www.youtube.com/embed/y1f0bNcpq6c`;
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
