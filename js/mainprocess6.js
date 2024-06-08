@@ -27,7 +27,11 @@ fetch(apiUrl).then((t => {
 		videoLink.href = `${DoHost}v?token=${videoId}&j=${IdCode}&p=${i+1}`;
 		videoLink.textContent = `${IdCode} - Part ${i+1}`;
 		const thumbnailImg = document.createElement("img");
-		thumbnailImg.src = `${bImgA}${t.images[i]}${bImgB}`;
+			if(t.images[0].includes("data:image")){
+				thumbnailImg.src = t.images[i];
+			} else {
+				thumbnailImg.src = `${bImgA}${t.images[i]}${bImgB}`;
+			}
 		thumbnailImg.alt = `${IdCode}`;
 		thumbnailImg.addEventListener("click", () => {
 			loadVideo(videoId, IdCode, p);
