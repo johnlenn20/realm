@@ -5,7 +5,9 @@ videoFrame.height = `360`;
 videoFrame.classList.remove('hidden');
 document.title = `Nonton ${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")}`;
 document.getElementById("judul").innerHTML = `${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")} | Part ${IdVideo.replace(/.+p=/,"")}`;
-
+$(document).ready(function() {
+    $("#logo").attr("href", `/?code=${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")}`);
+});
 function detectDevTools() {
 	if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
 		window.location.href = 'https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com';
