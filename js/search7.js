@@ -24,7 +24,7 @@ function displayResults(results) {
 		listItem.textContent = result;
 		listItem.addEventListener('click', function() {
 			// Perform desired action, for example, navigating to a URL
-			window.location.href = '//draft.useqr.link/search?id=' + result; // Change '#' to the appropriate URL
+			window.location.href = '//draft.useqr.link/wtf?id=' + result; // Change '#' to the appropriate URL
 		});
 		resultList.appendChild(listItem);
 	});
