@@ -130,7 +130,11 @@ function anonAd() {
 }
 
 function CewekDesa14() {
-	var values = ["clipperroutesevere.com/tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22","www.highcpmgate.com/znz0s3h6i?key=a646daff93c477731e7b913ca2001498","chesssorrydescend.com/c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc","functionssubqueries.com/kgugzywrs?key=a5f75415ab2d869b2bd1d24bd1554f2a""www.highcpmgate.com/m97begqm?key=9be6d2624ac999c9bb6d5dbbb31609a9"];
+	var values = ["clipperroutesevere.com/tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22",
+		      "www.highcpmgate.com/znz0s3h6i?key=a646daff93c477731e7b913ca2001498",
+		      "chesssorrydescend.com/c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc",
+		      "functionssubqueries.com/kgugzywrs?key=a5f75415ab2d869b2bd1d24bd1554f2a",
+		      "www.highcpmgate.com/m97begqm?key=9be6d2624ac999c9bb6d5dbbb31609a9"];
 
 	var values2 = ["404"];
 
