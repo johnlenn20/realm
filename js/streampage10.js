@@ -198,5 +198,5 @@ if (num == 10) {
 	anonAd();
 	var thsnow = new Date(),
 		thscurrentHour = thsnow.getHours();
-	if (thscurrentHour >= 0 && thscurrentHour <= 19) {CewekDesa14();} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {}
+	if (thscurrentHour >= 0 && thscurrentHour <= 6) {CewekDesa14();} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {}
 }
