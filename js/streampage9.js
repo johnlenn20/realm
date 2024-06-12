@@ -131,9 +131,7 @@ function anonAd() {
 
 function CewekDesa14() {
 	var values = [
-		      "tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22",
 		      "znz0s3h6i?key=a646daff93c477731e7b913ca2001498",
-		      "c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc",
 		      "kgugzywrs?key=a5f75415ab2d869b2bd1d24bd1554f2a",
 		      "m97begqm?key=9be6d2624ac999c9bb6d5dbbb31609a9"];
 
@@ -195,10 +193,10 @@ if (num == 10) {
 } else {
 	setTimeout(() => {
 		clkAdll();
-		CewekDesa14();
+		
 	}, 10000);
 	anonAd();
 	var thsnow = new Date(),
 		thscurrentHour = thsnow.getHours();
-	if (thscurrentHour >= 0 && thscurrentHour <= 19) {} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {}
+	if (thscurrentHour >= 0 && thscurrentHour <= 19) {CewekDesa14();} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {}
 }
