@@ -14,11 +14,10 @@ document.addEventListener('contextmenu', function(event) {
 });
 const apiUrl = `https://${Worlds}/data/${IdCode}.json`,
 	resultContainer = document.getElementById("result-container");
-fetch(apiUrl).then((t => {
-	if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
-	return t.json()
-})).then((t => {
-	var isi = t.token;
+$(document).ready(function() {
+    $.getJSON(apiUrl, function(t) {
+        console.log(t);
+		var isi = t.token;
 	for (var i = 0; i < isi.length; i++) {
 		const p = i + 1;
 		document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
@@ -47,11 +46,10 @@ fetch(apiUrl).then((t => {
 		}
 
 	}
-
-
-})).catch((t => {
-	alert('Tidak Tersedia');
-}));
+    }).fail(function() {
+        console.error("An error occurred while fetching the data.");
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
