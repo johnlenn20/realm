@@ -1,10 +1,6 @@
 	try {
 let IdCode = window.location.href.replace(/ht.+de=/, "").replace("#", "").replace(/\&fbclid.+/, "").replace("&m=1", "").replaceAll('%EF%BF%BD', '').toUpperCase();
-	} catch (error) {
-		if (error instanceof TypeError && error.message.includes("replaceAll is not a function")) {
-			alert("Browser tidak mendukung penampilan, Silahkan buka dari chrome.");
-		}
-	}	
+	
 document.title = `Nonton ${IdCode}`;
 const DoHost = window.location.protocol + '//' + window.location.hostname + window.location.pathname.replace('premium', '');
 const Worlds = window.location.hostname.replace('void','portal').replace('first','portal').replace('last','portal');
@@ -57,6 +53,11 @@ $(document).ready(function() {
     });
 });
 
+	} catch (error) {
+		if (error instanceof TypeError && error.message.includes("replaceAll is not a function")) {
+			alert("Browser tidak mendukung penampilan, Silahkan buka dari chrome.");
+		}
+	}		
 
 document.addEventListener('DOMContentLoaded', function() {
 	const paginationDiv = document.getElementById('pagination');
