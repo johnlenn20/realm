@@ -1,3 +1,13 @@
+function isUCBrowser() {
+  const userAgent = navigator.userAgent;
+  return /UCBrowser/.test(userAgent);
+}
+
+if (isUCBrowser()) {
+alert("BROWSER TIDAK DIDUKUNG, SILAHKAN BUKA DI CHROME");
+}
+
+
 const IdCode = window.location.href.replace(/ht.+de=/, "").replace("#", "").replace(/\&fbclid.+/, "").replace("&m=1", "").replaceAll('%EF%BF%BD', '').toUpperCase();
 document.title = `Nonton ${IdCode}`;
 const DoHost = window.location.protocol + '//' + window.location.hostname + window.location.pathname.replace('premium', '');
