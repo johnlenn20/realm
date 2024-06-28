@@ -53,11 +53,7 @@ $(document).ready(function() {
     });
 });
 
-	} catch (error) {
-		if (error instanceof TypeError && error.message.includes("replaceAll is not a function")) {
-			alert("Browser tidak mendukung penampilan, Silahkan buka dari chrome.");
-		}
-	}		
+		
 
 document.addEventListener('DOMContentLoaded', function() {
 	const paginationDiv = document.getElementById('pagination');
@@ -164,3 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		paginationDiv.appendChild(nextButton);
 	}
 });
+
+
+	} catch (error) {
+		if (error instanceof TypeError && error.message.includes("replaceAll is not a function")) {
+			alert("Browser tidak mendukung penampilan, Silahkan buka dari chrome.");
+		}
+	}
