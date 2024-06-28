@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	} catch (error) {
 		if (error instanceof TypeError && error.message.includes("replaceAll is not a function")) {
-			alert("Browser tidak mendukung penampilan, Silahkan buka dari chrome.");
+			alert("Browser tidak mendukung untuk menampilkan Koleksi, Silahkan buka dari Chrome.");
+			window.location="/p/search.html";
 		}
 	}
