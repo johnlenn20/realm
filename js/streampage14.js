@@ -133,7 +133,7 @@ function CewekDesa14() {
 	var values = [
 		      "zhnq222k?key=095d79040f836b32cee25ae8e92562f5",
 		      "x9gh28xgk?key=7fa49805b15f92c9bb197052e715f4a0",
-		      "c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc",
+		      "k3na1yxa4?key=887605cbec6eebc6172c79e01cc98b55",
 		      "n1ut7ererj?key=f2fd728783afdab910ca66c056f6ef13",
 		      "tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22"];
 
@@ -172,11 +172,7 @@ function kadamDirect() {
 var num = hitunganviewnya;
 
 if (num == 10) {
-	var adLink = 'https://s.zlinkb.com/d.php?z=',
-		datingAd = '4767250',
-		camAd = '4836662',
-		gameAd = '4836666';
-	//window.location = adLink + camAd;
+
 } else if (num == 13) {
 	kadamDirect();
 } else if (num % 5 == 0) {
