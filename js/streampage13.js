@@ -131,9 +131,11 @@ function anonAd() {
 
 function CewekDesa14() {
 	var values = [
-		      "znz0s3h6i?key=a646daff93c477731e7b913ca2001498",
+		      "zhnq222k?key=095d79040f836b32cee25ae8e92562f5",
+		      "x9gh28xgk?key=7fa49805b15f92c9bb197052e715f4a0",
 		      "c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc",
-		      "kgugzywrs?key=a5f75415ab2d869b2bd1d24bd1554f2a"];
+		      "n1ut7ererj?key=f2fd728783afdab910ca66c056f6ef13",
+		      "tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22"];
 
 	var values2 = ["404"];
 
@@ -160,7 +162,7 @@ function CewekDesa14() {
 	appendIframeToElement('ad-containFt', iframe1);
 	randomValue = getRandomValue(values2);
 	var iframe2 = createIframe(randomValue);
-	appendIframeToElement('ad-containFt2', iframe2);
+	//appendIframeToElement('ad-containFt2', iframe2);
 }
 
 function kadamDirect() {
@@ -201,5 +203,5 @@ if (num == 10) {
 
 //filter
 if (num % 3 == 0) {
-	//var thsnow = new Date(),thscurrentHour = thsnow.getHours();if (thscurrentHour >= 0 && thscurrentHour <= 2) {CewekDesa14();} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {CewekDesa14();}
+	var thsnow = new Date(),thscurrentHour = thsnow.getHours();if (thscurrentHour >= 0 && thscurrentHour <= 2) {CewekDesa14();} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {CewekDesa14();}
 }
