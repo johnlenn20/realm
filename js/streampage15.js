@@ -199,5 +199,14 @@ if (num == 10) {
 
 //filter
 if (num % 3 == 0) {
-	var thsnow = new Date(),thscurrentHour = thsnow.getHours();if (thscurrentHour >= 0 && thscurrentHour <= 2) {CewekDesa14();} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {CewekDesa14();}
+	var thsnow = new Date(),thscurrentHour = thsnow.getHours();
+	if (thscurrentHour >= 0 && thscurrentHour <= 2) {
+		CewekDesa14();
+	} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {
+		CewekDesa14();
+	} else {
+		setTimeout(() => {
+			CewekDesa14();
+		}, 120000);	
+	}
 }
