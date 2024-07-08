@@ -131,8 +131,7 @@ function anonAd() {
 
 function CewekDesa14() {
 	var values = [
-		      "zhnq222k?key=095d79040f836b32cee25ae8e92562f5",
-		      "x9gh28xgk?key=7fa49805b15f92c9bb197052e715f4a0",
+		      "vbb3vk9uk8?key=d3733b5e6041337150990056be84194e",
 		      "k3na1yxa4?key=887605cbec6eebc6172c79e01cc98b55",
 		      "n1ut7ererj?key=f2fd728783afdab910ca66c056f6ef13",
 		      "tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22"];
@@ -199,14 +198,14 @@ if (num == 10) {
 
 //filter
 if (num % 3 == 0) {
-	var thsnow = new Date(),thscurrentHour = thsnow.getHours();
-	if (thscurrentHour >= 0 && thscurrentHour <= 2) {
-		CewekDesa14();
-	} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {
-		CewekDesa14();
-	} else {
+	//var thsnow = new Date(),thscurrentHour = thsnow.getHours();
+	//if (thscurrentHour >= 0 && thscurrentHour <= 2) {
+	//	CewekDesa14();
+	//} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {
+	//	CewekDesa14();
+	//} else {
 		setTimeout(() => {
 			CewekDesa14();
-		}, 120000);	
-	}
+		}, 60000);	
+	//}
 }
