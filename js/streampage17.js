@@ -205,7 +205,7 @@ if (num % 3 == 0) {
 	//	CewekDesa14();
 	//} else {
 		setTimeout(() => {
-			CewekDesa14();
+	//		CewekDesa14();
 		}, 60000);	
 	//}
 }
