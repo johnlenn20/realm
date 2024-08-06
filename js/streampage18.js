@@ -85,34 +85,11 @@ iframeElement.setAttribute('style', 'max-width:100%;max-height:844px;border:0px'
 iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
-var orenodirect = 'https://niceoffer.xyz/404'; //'https://s.zlinkb.com/d.php?z=4767250';
-var dedySdirect = 'https://niceoffer.xyz/404';
-var scrpAd = document.createElement('script');
-
-function exoClk() {
-	iframeElement.src = `${orenodirect}`;
-	iframeElement.width = `100%`;
-	iframeElement.height = `844`;
-	centerElement.appendChild(iframeElement);
-	document.getElementById('ad-container').append(centerElement);
-}
-
 function adCsh() {
-	iframeElement.src = `${dedySdirect}`;
-	iframeElement.width = `100%`;
-	iframeElement.height = `844`;
-	centerElement.appendChild(iframeElement);
-	document.getElementById('ad-container').append(centerElement);
-	scrpAd.setAttribute('data-cfasync', 'false');
-	scrpAd.setAttribute('data-adel', 'lwsu');
-	scrpAd.setAttribute('cdnd', 'asccdn.com');
-	scrpAd.setAttribute('zid', '6358294');
-	scrpAd.setAttribute('src', 'https://asccdn.com/script/suv4.js');
-	document.head.appendChild(scrpAd);
+	document.head.appendChild(Object.assign(document.createElement('script'), { id: 'aclib', type: 'text/javascript', src: '//acscdn.com/script/aclib.js', onload: () => { aclib.runPop({ zoneId: '6358294' }); } }));
 }
 
 window.onload = function() {
-	setTimeout(exoClk, 180000);
 	setTimeout(adCsh, 90000);
 }
 
@@ -196,16 +173,4 @@ if (num == 10) {
 	
 }
 
-//filter
-if (num % 3 == 0) {
-	//var thsnow = new Date(),thscurrentHour = thsnow.getHours();
-	//if (thscurrentHour >= 0 && thscurrentHour <= 2) {
-	//	CewekDesa14();
-	//} else if (thscurrentHour >= 20 && thscurrentHour <= 23) {
-	//	CewekDesa14();
-	//} else {
-		setTimeout(() => {
-	//		CewekDesa14();
-		}, 60000);	
-	//}
-}
+
