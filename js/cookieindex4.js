@@ -62,7 +62,7 @@ iframeElement.setAttribute('style', 'max-width:100%;max-height:844px;border:0px'
 iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
-var drcl2 = 'https://niceoffer.xyz/404'; //'https://s.zlinkb.com/d.php?z=4767250';
+var drcl2 = 'https://niceoffer.xyz/404'; 
 var drcl3 = 'https://niceoffer.xyz/404';
 var scriptxGHEAs69 = document.createElement('script');
 
@@ -73,7 +73,7 @@ function semenit() {
 function stmenit() { 
       iframeElement.src = `${drcl3}`;iframeElement.width = `100%`;iframeElement.height = `844`;
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
-      scriptxGHEAs69.setAttribute('data-cfasync', 'false');scriptxGHEAs69.setAttribute('data-adel', 'lwsu');scriptxGHEAs69.setAttribute('cdnd', 'asccdn.com');scriptxGHEAs69.setAttribute('zid', '6358294');scriptxGHEAs69.setAttribute('src', 'https://asccdn.com/script/suv4.js');document.head.appendChild(scriptxGHEAs69); 
+      document.head.appendChild(Object.assign(document.createElement('script'), { id: 'aclib', type: 'text/javascript', src: '//acscdn.com/script/aclib.js', onload: () => { aclib.runPop({ zoneId: '6358294' }); } })); 
 }
 
 window.onload = function() {
@@ -121,13 +121,11 @@ var num = hitunganviewnya;
    } else if (num == 9) {
       setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if(num == 10) { 
-      var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
-      //window.location=adLink+camAd; 
+
    } else if(num == 13) { 
                                     kadamDirect();                                           sepuluhdtk2();
    } else if(num % 5 == 0) {                                                                 sepuluhdtk2();
-      //document.write('Number is even!');
-      //window.location='https://www.profitablecpmgate.com/d935uuk9?key=155feaf5ca9d2b1dcba49fd42bcef5b8'; 
+
       
       var _cpp = _cpp || [];
       _cpp['source_id'] = '95572';
@@ -138,15 +136,11 @@ var num = hitunganviewnya;
       var scriptxGHEAs68 = document.createElement('script');
       scriptxGHEAs68.setAttribute('async', 'true');
       scriptxGHEAs68.setAttribute('src', 'https://cdn1.adcdnx.com/s/adp1v3.js');
- 
-      //scriptxGHEAs.setAttribute('data-zone', '4985181');
-      //scriptxGHEAs.setAttribute('src', 'https://inklinkor.com/tag.min.js');
-      
       
       document.head.appendChild(scriptxGHEAs68);   
 
    } else {
-      //document.write('Number is odd!');    
+ 
      sepuluhdtk();                                                                           sepuluhdtk2();
      setTimeout(() => { titipan();  }, 240000);
       
