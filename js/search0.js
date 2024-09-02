@@ -31,7 +31,7 @@ function displayResults(results) {
 }
 
 // Event listener for input
-const Worlds = window.location.hostname.replace('void','portal').replace('first','portal').replace('last','portal');
+const Worlds = window.location.hostname.replace('void','portal2').replace('first','portal2').replace('last','portal2');
 document.getElementById('searchInput').addEventListener('input', async function() {
 	const query = this.value.trim();
 	if (query.length === 0) {
